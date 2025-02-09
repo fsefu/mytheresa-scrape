@@ -1,0 +1,6 @@
+.venv
+*.json
+__pycache__
+.vscode
+t.py
+t*.py
