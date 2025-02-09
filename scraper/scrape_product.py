@@ -46,7 +46,9 @@ def make_request(cookies, headers, payload):
 
 
 def scrape_product_data(cookies, headers, query, url, gender):
-    slug = f"/{url.rstrip("/").split("/")[-1]}"
+    # slug = f"/{url.rstrip("/").split("/")[-1]}"
+    slug = f"/{url.rstrip('/').split('/')[-1]}"
+
     multiply_rates = 1.2
     payload = {
         "query": query,
