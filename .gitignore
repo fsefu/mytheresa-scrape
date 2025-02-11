@@ -1,4 +1,5 @@
 .venv
+venv
 *.json
 __pycache__
 .vscode
