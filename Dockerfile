@@ -1,4 +1,3 @@
-# Here is my Dockerfile
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
@@ -12,6 +11,9 @@ WORKDIR /app
 # Copy the requirements file and install dependencies
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Create output directory
+RUN mkdir -p /app/output
 
 # Copy the entire project into the container
 COPY . /app
