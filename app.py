@@ -5,7 +5,7 @@ from scraper.get_product_link import get_product_link
 from scraper.scrape_product import scrape_product_data
 
 # Output file
-output_file = "scraped_data8.json"
+output_file = "/output/scraped_data8.json"
 
 
 # Function to append data to the JSON file
